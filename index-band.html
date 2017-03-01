@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Band-Akhil Jain</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Sansita|Ubuntu" rel="stylesheet" type="text/css">
+    
+    <style>
+    body{position: relative;}
+    h3{font-family: Sansita;letter-spacing: 10px;font-size: 22px;word-spacing: 5px}
+    p{font-size: 15px;line-height: 1.8;font-family: Ubuntu}
+    .italic{font-style: italic;}
+    .container{padding:80px 50px;}
+
+    img[alt="bandmember"] {filter: opacity(70%);width: 80%;height: 80%;margin-top:30px;margin-bottom:30px;border:10px solid transparent; }
+    img[alt="bandmember"]:hover{border-color: #d9d9d9;}
+
+    #band p,#contact p{color:#818181;}
+    #tour{
+    	color:#bdbdbd;
+    	background:url('images/pexels-photo-14676.jpg');
+		background-position: center center;
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		-webkit-background-attachment: fixed;
+		-moz-background-attachment: fixed;
+		-o-background-attachment: fixed;}
+    #tour h3{color:white;}
+    footer{background-color: #2d2d30;color: #f5f5f5;padding: 40px 10px}
+    footer a{color:#f5f5f5;}
+    footer a:hover{color: #777;text-decoration: none;}
+    
+    .btn{background-color: #333;color:#f1f1f1;border-radius: 0;border-color: #333;padding:10px 20px;}
+	.btn:hover,.btn:focus{background-color:white;color:#333;border-color:#333;transition: 0.2s}
+	.tab-content h2,.nav-tabs li a{color:#818181}
+
+    /*Navbar CSS starts*/
+	.navbar{border-radius: 0;
+			filter:opacity(75%);
+			font-family: montserrat;
+			letter-spacing: 4px;
+			font-weight:600;
+			margin-bottom: 0;
+			padding:3px;}
+	.navbar-nav li a{font-size: 11px;}
+	.dropdown-menu li a{font-size: 14px;letter-spacing: 4px;}
+	/*Navbar CSS Ends*/
+
+	/*Carousel CSS starts*/
+	.carousel-control.right,carousel-control.left{background-image: none;}
+	.carousel-inner img{width:100%;margin: auto;filter: grayscale(90%);heightt: 100vh!important}
+	.carousel-caption p{color:#fff;}
+	.carousel-inner{height: }
+	.carousel-inner .itemm{ height:100vh}
+	
+	/*Carousel CSS ends*/
+
+	/*Panel CSS starts*/
+	.list-group .list-group-item{padding:15px 10px;border-radius:0px}
+	/*Panel CSS ends*/
+	
+	/*Thumbnail CSS starts*/
+	.thumbnail{border:0;padding: 0}
+	.thumbnail img{width: 100%}
+	/*Thumbnail CSS ends*/
+
+	/*Modal CSS starts*/
+	.modal-header{border-radius: 0;background-color: #333;font-family:lato; letter-spacing: 10px;font-size: 25px;word-spacing: 5px;padding: 50px 50px}
+	.modal-header h2,.modal-header .close{color: #fff}
+	.modal-body{padding: 50px 50px}
+	/*Modal CSS ends*/
+    </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+	<div class="navbar-header">
+	  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapsed-items">
+	  	<span class="icon-bar"></span>
+	  	<span class="icon-bar"></span>
+	  	<span class="icon-bar"></span>
+	  </button>
+	  <a href="#myPage" class="navbar-brand">The Band</a>
+	</div>
+	<div class="collapse navbar-collapse" id="collapsed-items">
+	  <ul class="nav navbar-nav navbar-right">
+	  	<li><a href="#myPage">HOME</a></li>
+	  	<li><a href="#band">BAND</a></li>
+	  	<li><a href="#tour">TOUR</a></li>
+	  	<li><a href="#contact">CONTACT</a></li>
+	 	<li class="dropdown">
+	  	  <a href="#" class="dropdown-toggle" data-toggle="dropdown">MORE <span class="caret"></span></a>
+	  	  	<ul class="dropdown-menu">
+			   <li><a href="#">Merchandise</a></li>
+			   <li><a href="#">Extras</a></li>
+			   <li><a href="#">Media</a></li>
+	  	  	</ul>
+		</li>
+		<li><a href="#"><span class="glyphicon glyphicon-search"></span></a>
+	  </ul>
+	</div>
+  </div>
+</nav>
+
+<!--Home section-->
+<div id='home'>
+<!--Carousel-->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<!--Indicators-->
+	<ul class="carousel-indicators">
+		<li data-slide-to="0" data-target="#myCarousel" class="active"></li>
+		<li data-slide-to="1" data-target="#myCarousel"></li>
+		<li data-slide-to="2" data-target="#myCarousel"></li>
+	</ul>
+<!--Wrapper items-->
+	<div class="carousel-inner" role="listbox" sstyle="height:800px">
+	  <div class="item active">
+		<img src="images/new1.jpg" alt="image1">
+		<div class="carousel-caption">
+			<h3>India</h3>
+			<p>Ready set Go......</p>
+		</div>
+	  </div>
+	  <div class="item">
+		<img src="images/new2.jpg" alt="image1" >
+		<div class="carousel-caption">
+			<h3>Chicago</h3>
+			<p>Thank you, Chicago - A night we won't forget.</p>
+		</div>
+	  </div>
+	  <div class="item">
+		<img src="images/new3.jpg" alt="image1">
+		<div class="carousel-caption">
+			<h3>LA</h3>
+			<p>Even though the traffic was a mess, we had the best time playing at Venice Beach!</p>
+		</div>
+	  </div>
+	</div>
+<!--Left/Right butons-->
+	<a href="#myCarousel" class="carousel-control left" data-slide="prev" role="button">
+		<span class="glyphicon glyphicon-chevron-left"></span>
+		<span class="sr-only">Previous</span>
+	</a>
+	<a href="#myCarousel" class="carousel-control right" data-slide="next" role="button">
+		<span class="glyphicon glyphicon-chevron-right"></span>
+		<span class="sr-only">Next</span>
+	</a>
+</div>
+<!--/Carousel-->
+</div>
+<!--/Home section-->
+
+
+<!--Band section-->
+<div id="band">
+<div class="container text-center">
+	<h3>THE BAND</h3>
+	<br>
+	<p class="italic">We love music!</p>
+	<p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+	<br>
+	<div class="row">
+
+	  <div class="col-sm-4">
+	  	<p><strong>Kurt</strong></p>
+	  	<a href="#imgtext1" data-toggle="collapse"><img alt="bandmember" src="images/bandmember1.jpg" class="img-circle"></a>
+	  	<div id="imgtext1" class="collapse">
+	  		<p>Guitarist and Lead Vocalist</p><p>Loves long walks on the beach</p><p>Member since 1987</p>
+	  	</div>
+	  </div>
+	  <div class="col-sm-4">
+	  	<p><strong>Harry</strong></p>
+	  	<a href="#imgtext2" data-toggle="collapse"><img alt="bandmember" src="images/bandmember2.jpg" class="img-circle"></a>
+	  	<div id="imgtext2" class="collapse">
+	  		<p>Drummer</p><p>Loves drummin'</p><p>Member since 1988</p>
+	  	</div>
+	  </div>
+	  <div class="col-sm-4">
+	  	<p><strong>Robert</strong></p>
+	  	<a href="#imgtext3" data-toggle="collapse"><img alt="bandmember" src="images/bandmember3.jpg" class="img-circle"></a>
+	  	<div id="imgtext3" class="collapse">
+	  		<p>Bass player</p><p>Hates math</p><p>Member since 2005</p>
+	  	</div>
+	  </div>
+
+	</div>
+	</div>
+</div>
+<!--/Band section-->
+
+<!--Tour section-->
+<div id="tour">
+<div class="container">
+	<h3 class="text-center">TOUR DATES</h3>
+	<br>
+	<p class="text-center" style="color:white">We'll play you some nice music.<br>Don't forget to book your tickets!</p>
+	<ul class="list-group">
+		<li class="list-group-item">March <span class="label label-danger">Sold out!</span></li>
+		<li class="list-group-item">April <span class="label label-danger">Sold out!</span></li>
+		<li class="list-group-item">May <span class="label label-primary">Available</span><span class="badge">60</span></li>
+	</ul>
+
+	<div class="row text-center">
+	  
+	  <div class="col-sm-4">
+		<div class="thumbnail">
+		  <img src="images/india.jpg" alt="india" class="img-responsive">
+		  <div class="caption">
+		  	<p class="italic"><strong>India</strong></p>
+		  	<p>Sunday 19 March 2017</p>
+		  	<button type="button" class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
+		  	 </div>
+		  </div>
+		</div>
+
+	  <div class="col-sm-4">
+		<div class="thumbnail">
+		  <img src="images/newyork.jpg" alt="New York" class="img-responsive">
+		  <div class="caption">
+		  	<p class="italic"><strong>New York</strong></p>
+		  	<p>Saturday 8 April 2017</p>
+		  	<button type="button" class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
+		  </div>
+		</div>
+	  </div>
+
+	  <div class="col-sm-4">
+		<div class="thumbnail">
+		  <img src="images/sanfran.jpg" alt="SanFrancisco" class="img-responsive">
+		  <div class="caption">
+		  	<p class="italic"><strong>San Francisco</strong></p>
+		  	<p>Sunday 14 May 2017</p>
+		  	<button type="button" class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
+		  </div>
+		</div>
+	  </div>
+		
+		<!--Modal-->
+		  		<div id="myModal" class="modal fade" role="dialog">
+				  <div class="modal-dialog modal-md">
+				    <div class="modal-content">
+
+					  <div class="modal-header">
+ 						<a href="#" class="close" data-dismiss="modal">x</a>
+ 						<h2><span class="glyphicon glyphicon-lock"></span> Tickets</h2>
+					  </div>
+
+					  <div class="modal-body">
+					  	<div class="form-group" style="text-align: left">
+					  		<label for="number"><span class="glyphicon glyphicon-shopping-cart"></span> Tickets, $23 per person
+					  		</label>
+					  		<input type="number" class="form-control" id="number" placeholder="How many?">
+					  	</div>
+					  	<div class="form-group" style="text-align: left">
+					  		<label for="email"><span class="glyphicon glyphicon-user"></span> Send to</label>
+					  		<input type="email" class="form-control" id="email" placeholder="Enter Email">
+					  	</div>
+					  	<button type="button" class="btn btn-block">Pay <span class="glyphicon glyphicon-ok"></span></button>
+					  	</div>
+
+					  	<div class="modal-footer">
+					  	<button type="button" data-dismiss="modal" class="btn pull-left"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+					  	<p>Need <a href="#">help?</a></p>
+					  	</div>
+					  </div>
+				    </div>
+				  </div>
+				  <!--/Modal-->
+
+	 </div>
+   </div>
+</div>
+<!--/Tour section-->
+
+
+<!--Contact section-->
+<div id="contact">
+<div  class="container">
+	<h3 class="text-center">Contact</h3>
+	<br>
+	<p class="text-center italic">We love our fans!</p>
+	<div class="row">
+	
+	  <div class="col-sm-4">
+	  <p>Fan?Drop a note.
+	  	<p><span class="glyphicon glyphicon-map-marker"></span>New Delhi,India</p>
+	  	<p><span class="glyphicon glyphicon-phone"></span>Phone: +91 1167151515</p>
+	  	<p><span class="glyphicon glyphicon-envelope"></span>Email: contact@email.com</p>
+	  </div>
+	
+	  <div class="col-sm-8">
+	    <div class="row">
+		  <div class="col-sm-6 col-xs-6 form-group">
+		  <input type="text" name="name" class="form-control" placeholder="Name">
+		  </div>
+
+		  <div class="col-sm-6 col-xs-6 form-group">
+		  <input type="email" name="email" class="form-control" placeholder="Email">
+		  </div>
+	    </div>
+	    <textarea class="form-control" rows="5" placeholder="Comment"></textarea>
+	    <br>
+	    <button type="button" class="btn pull-right">Send</button>
+	  </div>
+
+	</div>
+<!--Nav Tab-->
+	<br>
+	<h3 class="text-center">From The Blog</h3>
+	<br>
+	<ul class="nav nav-tabs">
+		<li class="active"><a href="#julian" data-toggle="tab">Julian</a></li>
+		<li><a href="#barry" data-toggle="tab">Barry</a></li>
+		<li><a href="#harrison" data-toggle="tab">Harrison</a></li>
+	</ul>
+	<div class="tab-content">
+	  <div id="julian" class="tab-pane fade in active">
+	  	<h2>Julian Dom, Manager</h2>
+	  	<p>Man, we've been on the road for some time now. Looking forward to more adventure.</p>
+	  </div>
+	   <div id="barry" class="tab-pane fade in">
+	  	<h2>Barry Allen, Guitarist</h2>
+	  	<p>Always a pleasure people! Hope you enjoyed it as much as I did. Could I BE.. any more pleased?</p>
+	  </div>
+	   <div id="harrison" class="tab-pane fade in">
+	  	<h2>Harrison Wells, Bass player</h2>
+	  	<p>I mean, sometimes I enjoy the show, but other times I enjoy other things.</p>
+	  </div>
+	</div>
+<!--/Nav Tab-->
+	</div>
+</div>
+<!--/Contact section-->
+
+
+
+<!--Google maps-->
+
+<!-- Set height and width with CSS -->
+<div id="googleMap" style="height:400px;width:100%;filter: grayscale(90%);"></div>
+
+<!-- Add Google Maps -->
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+var myCenter = new google.maps.LatLng(28.6139,77.2090);
+
+function initialize() {
+var mapProp = {
+center:myCenter,
+zoom:12,
+scrollwheel:false,
+draggable:true,
+mapTypeId:google.maps.MapTypeId.ROADMAP
+};
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+position:myCenter,
+});
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+<!--/Google maps-->
+
+<footer class="text-center">
+	<a data-placement="top" href="#myPage" data-toggle="tooltip" title="TO TOP">
+	<span class="glyphicon glyphicon-chevron-up"></span>
+	</a>
+	<br><br>
+	<p>The Band Project Made By <a href="#" data-placement="top" target="_blank" data-toggle="tooltip" title="Visit us">Akhil Jain</a></p>	
+</footer>
+
+
+<!--=============Script====================-->
+<script src="bootstrap-3.3.7-dist/js/jquery.min.js"> </script>
+<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"> </script>
+<!--/Script-->
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip(); 
+});
+</script>
+
+<!--Smooth scrolling in navbar-->
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+   // Make sure this.hash has a value before overriding default behavior
+  if (this.hash !== "") {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+<!--/Smooth scrolling in navbar-->
+
+</body>
+</html>
